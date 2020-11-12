@@ -72,7 +72,7 @@ public class UserContro {
 //		}
 //		return user1;
 //	}
-	// only for username
+	// only for username. It works good 
 	@PostMapping("/login")
 	public User getByName(@RequestBody User user) throws Exception {
 		User userObj = null;
