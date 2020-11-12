@@ -72,6 +72,7 @@ public class UserContro {
 //		}
 //		return user1;
 //	}
+	// only for username
 	@PostMapping("/login")
 	public User getByName(@RequestBody User user) throws Exception {
 		User userObj = null;
@@ -86,6 +87,8 @@ public class UserContro {
 		
 	}
 	
+	
+	//login page for username and password
 	@PostMapping("/login2")
 	public User getByNameAndPassword(@RequestBody User user) throws Exception {
 		User userObj = null;
